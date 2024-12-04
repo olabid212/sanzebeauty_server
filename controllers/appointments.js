@@ -53,19 +53,32 @@ const bookAppointment = expressAsyncHandler(async (req, res) => {
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
             .email-header {
-                background-color: black;
                 color: white;
                 text-align: center;
-                padding: 20px;
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .email-title{
+                height: 5%;
+                background-color: #304557;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .email-title img{
+                max-width: 80%;
             }
             .email-header img {
                 max-width: 200px;
-                margin-bottom: 10px;
             }
             .email-body {
                 padding: 20px;
                 line-height: 1.6;
-                color: black;
             }
             .email-footer {
                 background-color: #f4f4f4;
@@ -79,8 +92,10 @@ const bookAppointment = expressAsyncHandler(async (req, res) => {
     <body>
         <div class="email-container">
             <div class="email-header">
-                <img src="https://res.cloudinary.com/dytiwfqmq/image/upload/v1732294265/wuzhgfzrheyc6xvrmgoi.jpg" alt="Company Logo">
-                <h1>Appointment Confirmation</h1>
+                <img src="https://res.cloudinary.com/dikekyyr9/image/upload/v1733272693/Sanze_Dark_Logo_rdtgbw.png" alt="Sanze Beauty Logo">
+            </div>
+            <div class="email-title">
+                <img src="https://res.cloudinary.com/dikekyyr9/image/upload/v1733272001/New_Appointment_Confirmation_eyqghx.png" alt="">
             </div>
             <div class="email-body">
                 <p>Dear ${name},</p>
@@ -90,7 +105,7 @@ const bookAppointment = expressAsyncHandler(async (req, res) => {
                     <li><strong>Date:</strong> ${date}</li>
                     <li><strong>Time:</strong> ${time}</li>
                 </ul>
-                <p>We look forward to serving you. If you have any questions, feel free to contact us.</p>
+                <p>We look forward to serving you. If you have any questions, feel free to contact us here.</p>
             </div>
             <div class="email-footer">
                 <p>Sanze Beauty © 2024 | All rights reserved.</p>
@@ -127,14 +142,28 @@ const bookAppointment = expressAsyncHandler(async (req, res) => {
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
             .email-header {
-                background-color: black;
                 color: white;
                 text-align: center;
-                padding: 20px;
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .email-title{
+                height: 5%;
+                background-color: #304557;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .email-title img{
+                max-width: 80%;
             }
             .email-header img {
                 max-width: 200px;
-                margin-bottom: 10px;
             }
             .email-body {
                 padding: 20px;
@@ -152,8 +181,10 @@ const bookAppointment = expressAsyncHandler(async (req, res) => {
     <body>
         <div class="email-container">
             <div class="email-header">
-                <img src="https://res.cloudinary.com/dytiwfqmq/image/upload/v1732294265/wuzhgfzrheyc6xvrmgoi.jpg" alt="Company Logo">
-                <h1>New Appointment Confirmation</h1>
+                <img src="https://res.cloudinary.com/dikekyyr9/image/upload/v1733272693/Sanze_Dark_Logo_rdtgbw.png" alt="Sanze Beauty Logo">
+            </div>
+            <div class="email-title">
+                <img src="https://res.cloudinary.com/dikekyyr9/image/upload/v1733272001/New_Appointment_Confirmation_eyqghx.png" alt="">
             </div>
             <div class="email-body">
                 <p>A new appointment has been booked by:</p>
