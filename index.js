@@ -23,7 +23,7 @@ const { notFound, errorHandler } = require("./middleware/error");
 
 // Use CORS middleware
 const corsOptions = {
-  origin: "https://sanze-beauty-z9uh.vercel.app",
+  origin: ["https://sanze-beauty-z9uh.vercel.app", "https://sanzebeauty.com/"],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204, // For legacy browser support

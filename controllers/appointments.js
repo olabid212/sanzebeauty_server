@@ -69,7 +69,6 @@ const bookAppointment = expressAsyncHandler(async (req, res) => {
                 justify-content: center;
 
             }
-
             .email-title img{
                 max-width: 80%;
             }
@@ -79,6 +78,13 @@ const bookAppointment = expressAsyncHandler(async (req, res) => {
             .email-body {
                 padding: 20px;
                 line-height: 1.6;
+            }
+            .btn{
+                background-color: #304557;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 50px;
             }
             .email-footer {
                 background-color: #f4f4f4;
@@ -105,7 +111,10 @@ const bookAppointment = expressAsyncHandler(async (req, res) => {
                     <li><strong>Date:</strong> ${date}</li>
                     <li><strong>Time:</strong> ${time}</li>
                 </ul>
-                <p>We look forward to serving you. If you have any questions, feel free to contact us here.</p>
+                <p>We look forward to serving you. If you have any questions about this appointment, please feel free to contact us here.</p>
+                <a href="https://sanzebeauty.com/contact-us" target="_blank">
+                    <button class="btn">Contact Us</button>
+                </a>
             </div>
             <div class="email-footer">
                 <p>Sanze Beauty © 2024 | All rights reserved.</p>
