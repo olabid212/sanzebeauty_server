@@ -20,6 +20,9 @@ const sendMail = async ({ to, subject, text, html = null }) => {
       },
     });
 
+  
+
+
     // Set up email options
     const mailOptions = {
       from: `"Sanze Beauty" <${process.env.EMAIL_USER}>`, // Sender address
